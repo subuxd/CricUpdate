@@ -1,0 +1,11 @@
+{
+    "name": "CricUpdate",
+    "version": "1.0.0",
+    "description": "All your Cricket news at one click!!!",
+    "manifest_version": 3,
+    "author": "Subham Singh",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "CricUpdate"
+    }
+}
