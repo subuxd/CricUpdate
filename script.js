@@ -1,11 +1,7 @@
-require('dotenv').config();
-
-// Access the API key
-const apiKey = process.env.API_KEY;
 
 async function getMatchData() {
-    return await fetch()
-        .then(data => data.json(apiKey))
+    return await fetch("https://api.cricapi.com/v1/currentMatches?apikey=cddc26e4-b89b-4446-8f55-36792384ef37&offset=0")
+        .then(data => data.json())
         .then(data => {
             if (data.status != "success") return;
 
